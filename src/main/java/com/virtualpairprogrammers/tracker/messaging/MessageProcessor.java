@@ -31,7 +31,8 @@ public class MessageProcessor {
 		VehiclePosition newReport = new VehicleBuilder()
 				                          .withName(incomingMessage.get("vehicle"))
 				                          .withLat(new BigDecimal(incomingMessage.get("lat")))
-				                          .withLng(new BigDecimal(incomingMessage.get("long")))
+										  .withLng(new BigDecimal(incomingMessage.get("long")))
+										  .withSpeed(47.5)
 				                          .withTimestamp(convertedDatestamp)
 				                          .build();
 				                          
